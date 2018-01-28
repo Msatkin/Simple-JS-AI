@@ -1,0 +1,32 @@
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <link href="./style.css" rel="stylesheet"/>
+            <script src="./script.js"></script>
+        </head>
+        <body>
+            <div class='scene'>
+                <div class='grass'></div>
+
+                <div class='road'>
+                    <div class='ai'>
+                        <div class='sensor_1'>1</div>
+                        <div class='sensor_2'>2</div>
+                        <div class='sensor_3'>3</div>
+                    </div>
+
+                    <div class='wall' id='wall'></div>
+                </div>
+
+                <div class='grass'></div>
+            </div>
+
+            <div class='debugArea'>
+                <textarea id='debugTextarea' class='debugTextareaClass' readonly></textarea>  
+                <input type='text' id='stepsDone' value='0' style='width:50px' readonly/>
+                <input type='button' id="startBtn" value='Start' onClick="runSim(true)" />
+                <input type='button' id="stopBtn" value='Stop' onClick="runSim(false)" disabled/>
+            </div>
+        </body>
+    </html>
+</DOCTYPE>
